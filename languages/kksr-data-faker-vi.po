@@ -77,8 +77,8 @@ msgid "Posts with votes equal to or greater than this number will not be overwri
 msgstr "Các bài viết có số lượt đánh giá bằng hoặc lớn hơn số này sẽ không bị ghi đè (mặc định: 100)"
 
 #: includes/class-kksr-admin.php:154
-msgid "Configure the range for generated ratings and votes (KK Star Ratings for posts only)."
-msgstr "Cấu hình khoảng cho đánh giá và bình chọn được tạo (KK Star Ratings chỉ cho bài viết)."
+msgid "Configure the range for generated ratings and votes (KK Star Ratings for posts and products)."
+msgstr "Cấu hình khoảng cho đánh giá và bình chọn được tạo (KK Star Ratings cho bài viết và sản phẩm)."
 
 #: includes/class-kksr-admin.php:166
 msgid "General plugin settings and thresholds."
@@ -92,9 +92,37 @@ msgstr "Số lượt đánh giá tối thiểu phải nhỏ hơn số lượt đ
 msgid "Minimum star rating must be less than maximum star rating."
 msgstr "Đánh giá sao tối thiểu phải nhỏ hơn đánh giá sao tối đa."
 
-#: includes/class-kksr-admin.php:305
+#: includes/class-kksr-admin.php:344
+msgid "Security check failed."
+msgstr "Kiểm tra bảo mật thất bại."
+
+#: includes/class-kksr-admin.php:349
+msgid "You do not have sufficient permissions."
+msgstr "Bạn không có đủ quyền."
+
+#: includes/class-kksr-admin.php:362
+msgid "All data has been regenerated with current settings."
+msgstr "Tất cả dữ liệu đã được tái tạo với cài đặt hiện tại."
+
+#: includes/class-kksr-admin.php:388
+msgid "Settings saved. All data has been regenerated with new ranges."
+msgstr "Đã lưu cài đặt. Tất cả dữ liệu đã được tái tạo với khoảng mới."
+
+#: includes/class-kksr-admin.php:405
 msgid "You do not have sufficient permissions to access this page."
 msgstr "Bạn không có quyền truy cập trang này."
+
+#: includes/class-kksr-admin.php:431
+msgid "Actions"
+msgstr "Hành động"
+
+#: includes/class-kksr-admin.php:432
+msgid "Regenerate all data with current settings. This will update all posts and products with votes below the threshold."
+msgstr "Tái tạo tất cả dữ liệu với cài đặt hiện tại. Điều này sẽ cập nhật tất cả bài viết và sản phẩm có số lượt đánh giá dưới ngưỡng."
+
+#: includes/class-kksr-admin.php:436
+msgid "Regenerate All Data"
+msgstr "Tái tạo tất cả dữ liệu"
 
 #: includes/class-kksr-admin.php:312
 msgid "How it works:"

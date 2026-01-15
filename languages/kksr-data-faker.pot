@@ -73,7 +73,7 @@ msgid "Posts with votes equal to or greater than this number will not be overwri
 msgstr ""
 
 #: includes/class-kksr-admin.php:154
-msgid "Configure the range for generated ratings and votes (KK Star Ratings for posts only)."
+msgid "Configure the range for generated ratings and votes (KK Star Ratings for posts and products)."
 msgstr ""
 
 #: includes/class-kksr-admin.php:166
@@ -88,8 +88,36 @@ msgstr ""
 msgid "Minimum star rating must be less than maximum star rating."
 msgstr ""
 
-#: includes/class-kksr-admin.php:305
+#: includes/class-kksr-admin.php:344
+msgid "Security check failed."
+msgstr ""
+
+#: includes/class-kksr-admin.php:349
+msgid "You do not have sufficient permissions."
+msgstr ""
+
+#: includes/class-kksr-admin.php:362
+msgid "All data has been regenerated with current settings."
+msgstr ""
+
+#: includes/class-kksr-admin.php:388
+msgid "Settings saved. All data has been regenerated with new ranges."
+msgstr ""
+
+#: includes/class-kksr-admin.php:405
 msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: includes/class-kksr-admin.php:431
+msgid "Actions"
+msgstr ""
+
+#: includes/class-kksr-admin.php:432
+msgid "Regenerate all data with current settings. This will update all posts and products with votes below the threshold."
+msgstr ""
+
+#: includes/class-kksr-admin.php:436
+msgid "Regenerate All Data"
 msgstr ""
 
 #: includes/class-kksr-admin.php:312
