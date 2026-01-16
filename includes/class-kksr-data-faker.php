@@ -101,8 +101,22 @@ class KKSR_Data_Faker {
 	 * Initialize WordPress Hooks
 	 */
 	private function init_hooks() {
+		// Initialize session early
+		add_action( 'init', array( $this, 'init_session' ) );
+		
 		// Track visitor views
 		add_action( 'wp', array( $this, 'track_visitor_view' ) );
+	}
+
+	/**
+	 * Initialize Session
+	 *
+	 * Start session early to prevent headers already sent errors.
+	 */
+	public function init_session() {
+		if ( ! session_id() ) {
+			session_start();
+		}
 	}
 
 	/**
@@ -120,8 +134,14 @@ class KKSR_Data_Faker {
 	 * Track Visitor View
 	 *
 	 * Main function called on page view.
+	 * Only tracks on singular post/product pages.
 	 */
 	public function track_visitor_view() {
+		// Only track on single post/product pages
+		if ( ! is_singular() ) {
+			return;
+		}
+		
 		$post_id = get_the_ID();
 		if ( ! $post_id ) {
 			return;
